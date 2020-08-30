@@ -3,7 +3,7 @@
 
 Vagrant.configure(2) do |config|
   config.vm.box = "generic/ubuntu1604"
-
+  config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
   # config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
